@@ -1,0 +1,1074 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+    
+<!-- Mirrored from pycon.jp/2015/ja/reports/slides/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Sep 2020 01:34:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8" />
+        <title>PyCon JP 2015 Slides | PyCon JP 2015 in TOKYO</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        
+    <link rel="stylesheet" href="https://pycon.jp/2015/site_media/static/cache/css/a69b123b6daf.css" type="text/css" />
+
+    
+        <link rel="stylesheet" href="https://pycon.jp/2015/site_media/static/cache/css/aa2a86b77114.css" type="text/css" media="all" />
+    
+
+    <link rel="stylesheet" href="https://pycon.jp/2015/site_media/static/cache/css/9093653cfeb6.css" type="text/css" />
+
+    
+
+
+        
+            <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+                <script src="/2015/site_media/static/pinax/js/html5shiv.js"></script>
+            <![endif]-->
+        
+
+        
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://pycon.jp/2015/site_media/static/img/ogp_logo.png" />
+    <meta property="og:title" content="PyCon JP 2015 Slides | PyCon JP 2015 in TOKYO" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:site_name" content="PyCon JP 2015" />
+    <meta property="og:description" content="PyCon JP 2015" />
+
+
+    <link href="https://pycon.jp/2015/site_media/static/img/favicon.ico" rel="shortcut icon" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+
+<script type="text/javascript" src="https://pycon.jp/2015/site_media/static/cache/js/ea388955cc03.js"></script>
+
+    
+    <script type="text/javascript">
+        $(function () {
+            var mdown = $('.box-content').html();
+            var converter = new Attacklab.showdown.converter();
+            var html = converter.makeHtml(mdown);
+            $('.box-content').html(html);
+        });
+    </script>
+
+    <meta name="google-site-verification" content="fG_DG4G4eFtBcgIKht-bJKdirGhDa_51X6yeCS8daDs" />
+
+    </head>
+    <body class="cms-page " id="">
+        <div class="">
+
+            
+    
+    <header class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="../../index.html">
+                    <img src="https://pycon.jp/2015/site_media/static/img/pycon2015-logo-small.png" alt="PyCon JP 2015 in Tokyo" width="100">
+                </a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">language <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li class="active"><a href="index.html"> 日本語 </a></li>
+                                
+                                    <li class=""><a href="https://pycon.jp/2015/en/reports/slides/"> English </a></li>
+                                
+                            </ul>
+                        </li>
+                        <!--  -->
+                        
+                        
+
+
+
+<li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="icon-wrench"></span> <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+    
+        <li><a class="login" href="../../account/login/index.html">ログイン</a></li>
+        <li><a class="signup" href="../../account/signup/index.html">会員登録</a></li>
+    
+    </ul>
+</li>
+
+                        
+                    </ul>
+                    <ul class="nav">
+                        
+                            
+                            
+                            
+                            
+
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                About
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="../../about/what-is-pyconjp/index.html" >PyCon JPってなに?</a>
+        </li>
+    
+        <li >
+            <a href="../../about/summary/index.html" >開催概要</a>
+        </li>
+    
+        <li >
+            <a href="../../about/code-of-conduct/index.html" >行動規範</a>
+        </li>
+    
+        <li >
+            <a href="../../about/staff/index.html" >スタッフ募集</a>
+        </li>
+    
+        <li >
+            <a href="../../about/staff-list/index.html" >スタッフ一覧</a>
+        </li>
+    
+        <li >
+            <a href="../../sitemap/index.html" >サイトマップ</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Talks
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="../../talks/cfp/index.html" >演題募集</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Events
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="../../schedule/index.html" >カンファレンススケジュール</a>
+        </li>
+    
+        <li >
+            <a href="../../talks/keynote/index.html" >基調講演</a>
+        </li>
+    
+        <li >
+            <a href="../../schedule/talks/list/index.html" >トーク一覧</a>
+        </li>
+    
+        <li >
+            <a href="../../schedule/posters/list/index.html" >ポスター一覧</a>
+        </li>
+    
+        <li >
+            <a href="../../schedule/lightning-talks/list/index.html" >LT一覧</a>
+        </li>
+    
+        <li >
+            <a href="../../schedule/tutorials/list/index.html" >チュートリアル</a>
+        </li>
+    
+        <li >
+            <a href="../../events/sprint/index.html" >スプリント</a>
+        </li>
+    
+        <li >
+            <a href="../../events/kids-ws/index.html" >子ども向けワークショップ</a>
+        </li>
+    
+        <li >
+            <a href="../../events/jobsfair/index.html" >ジョブフェア</a>
+        </li>
+    
+        <li >
+            <a href="../../events/panel/index.html" >パネルディスカッション</a>
+        </li>
+    
+        <li >
+            <a href="../../events/committee-meeting/index.html" >Committee Meeting</a>
+        </li>
+    
+        <li >
+            <a href="../../events/community-booth/index.html" >コミュニティーブース</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Sponsors
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="../../sponsors/index.html" >PyCon JPスポンサー</a>
+        </li>
+    
+        <li >
+            <a href="../../sponsors/patrons/index.html" >パトロンスポンサー</a>
+        </li>
+    
+        <li >
+            <a href="../../sponsors/prospectus/index.html" >スポンサー募集要項</a>
+        </li>
+    
+        <li >
+            <a href="../../sponsors/whysponsor/index.html" >スポンサーシップのメリット</a>
+        </li>
+    
+        <li >
+            <a href="../../sponsors/jobs/index.html" >ジョブ・フェアー</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Participants
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="../../files/12/pyconjpquestionnaire0129.html" >参加者アンケート(集計結果)</a>
+        </li>
+    
+        <li >
+            <a href="../../participants/index.html" >参加者の手引き</a>
+        </li>
+    
+        <li >
+            <a href="../../registration/index.html" >PyCon JP 2015 への参加登録(受付終了)</a>
+        </li>
+    
+        <li >
+            <a href="../../registration/support/index.html" >遠方参加者への支援（受付終了）</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Venue
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li >
+            <a href="../../venue/index.html" >会場情報</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="http://pyconjp.blogspot.jp/" >
+                Blog
+                
+            </a>
+            
+        </li>
+    
+        <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Reports
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu">
+    
+        <li class="active">
+            <a href="index.html" >発表資料</a>
+        </li>
+    
+        <li >
+            <a href="../blogs/index.html" >感想ブログ</a>
+        </li>
+    
+        <li >
+            <a href="https://docs.google.com/spreadsheets/d/15k6P-No1-WnhHMxgoyMl1GpKpOft2rsn9gkyLoqCNTg/pubhtml?gid=0&amp;single=true" >予算(Googleスプレッドシート)</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+
+                            
+                            
+                        
+                    </ul>
+                </div><!-- /nav-collapse -->
+
+            </div><!-- /container-fluid -->
+        </div><!-- /navbar-inner -->
+
+    </header>
+<!--     <a id="skip" href="#content">メインページへ戻る</a> -->
+    
+
+
+            
+    <div id="content">
+        
+            <div class="page-head">
+                <div class="container">
+                    <h1>PyCon JP 2015 Slides</h1>
+                    
+
+<ul class="breadcrumb">
+	
+		
+			<li>
+				<a href="#" >Reports</a>
+				<span class="divider">/</span>
+			</li>
+		
+	
+		
+			<li class="active">発表資料</li>
+		
+	
+</ul>
+
+
+                </div>
+            </div>
+            <div class="page-content">
+                
+                <div class="container">
+
+                    <div class="row">
+                        <div class="span9">
+                            
+    
+
+                            <div class="box">
+                                <div class="box-content"><div class="section" id="keynote">
+<h1>Keynote</h1>
+<div class="section" id="beyond-grep-practical-logging-and-metrics">
+<h2><a class="reference external" href="../../talks/keynote/index.html">Beyond grep: Practical Logging and Metrics</a></h2>
+<p><strong>Hynek Schlawack</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/8taRoVYv_UI">YouTube Video</a></li>
+<li><a class="reference external" href="https://speakerdeck.com/hynek/beyond-grep-pycon-jp">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884747">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="possibilities-of-python">
+<h2><a class="reference external" href="../../talks/keynote/index.html">Possibilities of Python 〜エンジニア・コミュニティ で組織は動き出す</a></h2>
+<p><strong>Haruo Sato - 佐藤治夫</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/RJH8R9_OL8k">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/ssuserafaef6/pycon-jp-2015-keynote">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885220">Togetter</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="talks">
+<h1>Talks</h1>
+<div class="section" id="id1">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/47/">強くなるためのプログラミング ープログラミングに関する様々なコンテストとそのはじめ方ー</a></h2>
+<p><strong>Chica Matsueda</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/9MLmeLr_p50">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/cocodrips/pyconjp">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884761">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="ways-to-avoid-overfitting-when-developing-a-trading-strategy">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/75/">Ways to avoid overfitting when developing a trading strategy</a></h2>
+<p><strong>C.Y. Yen</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/wK10nJI6E9g">YouTube Video</a></li>
+<li><a class="reference external" href="N/A/index.html">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884771">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="python">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/44/">組合せ最適化を体系的に知ってPythonで実行してみよう</a></h2>
+<p><strong>Saito Tsutomu</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/VsiJ-wxMbaw">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/SaitoTsutomu/python-pycon-2015">Slide</a></li>
+<li><a class="reference external" href="http://qiita.com/Tsutomu-KKE@github/items/bfbf4c185ed7004b5721">組合せ最適化を使おう - Qiita</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884757">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="how-we-realize-soa-by-python">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/63/">How we realize SOA by Python</a></h2>
+<p><strong>Hiroki KIYOHARA</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/AkzdNMDJBuc">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/hirokiky/how-we-realized-soa-by-python-at-pycon-jp-2015">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884788">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="python-type-hints">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/57/">Python と型ヒント (Type Hints)</a></h2>
+<p><strong>Tetsuya Morimoto</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/9UgT-s7fjy0">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/t2y/python-type-hints-53759060">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884802">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="python4">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/50/">Pythonによる4足歩行ロボットの制御と強化学習による歩行動作獲得の実例</a></h2>
+<p><strong>Hideyuki Takei</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/mRMNxrYnkG4">YouTube Video</a></li>
+<li><a class="reference external" href="https://speakerdeck.com/hideyuki/pythonniyoru4zu-bu-xing-robotutofalsezhi-yu-toqiang-hua-xue-xi-niyorubu-xing-dong-zuo-huo-de-falseshi-li-number-pyconjp">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884805">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/53/">日本のオープンデータプラットフォームをPythonでつくる</a></h2>
+<p><strong>Yuta Kashino</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/7SNVx3YzY5E">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/yutakashino/python-53783451">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884815">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="building-a-scalable-python-grpc-service-using-kubernetes">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/64/">Building a Scalable Python gRPC Service using Kubernetes</a></h2>
+<p><strong>Ian Lewis</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/Ox30fP8AdOY">YouTube Video</a></li>
+<li><a class="reference external" href="N/A/index.html">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884822">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="web">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/66/">なぜWeb画面自動テストはうまく行かないのか</a></h2>
+<p><strong>Akira Taniguchi</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/p4EElYZwZw4">YouTube Video</a></li>
+<li><a class="reference external" href="https://docs.google.com/presentation/d/1cWX8fyHUl1rqhZf3eIJHu0JvyYxJLQfkBP6CTMP3sYc">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884827">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="tornado-elasticsearch">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/51/">Tornado/ElasticSearchで実現する大量ツイートのリアルタイム関連文書判定</a></h2>
+<p><strong>Satoru Kadowaki</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/wO5qvjAFMyg">YouTube Video</a></li>
+<li><a class="reference external" href="N/A/index.html">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884837">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="minecraftpython">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/34/">MinecraftをPythonで遊ぶ</a></h2>
+<p><strong>Tomoki Ohno</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/9lZRc4dlpO0">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/wh11e7rue/minecraftpython">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884833">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="karaoke-style-read-aloud-system">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/49/">Karaoke-style Read-aloud System</a></h2>
+<p><strong>Renyuan Lyu</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/SV-7Fwy1z7Q">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/tarzanlyu/ry-pyconjp2015-karaoke">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884831">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="python-and-the-semantic-web-building-a-linked-data-fragment-server-with-asynco-and-redis">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/56/">Python and the Semantic Web: Building a Linked Data Fragment Server with Asynco and Redis</a></h2>
+<p><strong>Jeremy Nelson</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/-z0m4RGm76w">YouTube Video</a></li>
+<li><a class="reference external" href="http://intro2libsys.info/pycon-jp-2015/">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884842">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/52/">Pythonで作る俺様サウンドエフェクター</a></h2>
+<p><strong>Ransui Iso</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/S_ipiLIClZw">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/RansuiIso/python-53866297">Slide</a></li>
+<li><a class="reference external" href="http://alpa.homeip.net/files/PyConJP2015/pyconjp2015_soundeffector.tar.bz2">Demo</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884853">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="sphinx">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/45/">Sphinxで作る貢献しやすいドキュメント翻訳の仕組み</a></h2>
+<p><strong>Takayuki Shimizukawa</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/pMt9cbWFQ1M">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/shimizukawa/sphinx-53764167">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884858">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="pyladies-tokyo-python">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/48/">PyLadies Tokyo－初心者女性向けPython体験ワークショップ開催の裏側</a></h2>
+<p><strong>Nobuko Katayanagi</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/YOqeJqln0EU">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/katayanaginobuko/pyladies-tokyo-python">Slide</a></li>
+<li><a class="reference external" href="https://github.com/PyLadiesTokyo/girls-tech-fes">Girls Tech Fes - PyLadies Tokyo</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884897">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="let-it-crash-what-python-can-learn-from-erlang">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/69/">Let it crash: what Python can learn from Erlang.</a></h2>
+<p><strong>Benoit Chesneau</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/acOVIrIBshg">YouTube Video</a></li>
+<li><a class="reference external" href="N/A/index.html">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884891">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="tse-python">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/55/">tse - Pythonによるテキスト整形ユーティリティ</a></h2>
+<p><strong>Atsuo Ishimoto</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/XfwW1gpvZIo">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/atsuoishimoto/tse-python">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/884868">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="packaging">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/46/">Packaging最前線</a></h2>
+<p><strong>aodag</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/srr48apPjG8">YouTube Video</a></li>
+<li><a class="reference external" href="N/A/index.html">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885012">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="teaching-data-structures-with-python">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/54/">Teaching Data Structures with Python</a></h2>
+<p><strong>Fernando Masanori Ashikaga</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/6yF5KuOm2LQ">YouTube Video</a></li>
+<li><a class="reference external" href="N/A/index.html">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885017">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="pandas-internals">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/58/">pandas internals</a></h2>
+<p><strong>Masaaki Horikoshi</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/4vGJ3fVkguY">YouTube Video</a></li>
+<li><a class="reference external" href="https://speakerdeck.com/sinhrks/pyconjp-2015-pandas-internals">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885288">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="pythonpycoramfpga">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/73/">PythonとPyCoRAMでお手軽にFPGAシステムを開発してみよう</a></h2>
+<p><strong>Shinya Takamaeda</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/ssh0bM3-FYw">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/shtaxxx/2015-10-11-pycon-pycoram">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885295">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="python3d-3d">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/60/">Pythonで3Dデータモデリング&amp;3Dプリント</a></h2>
+<p><strong>Takuro Wada</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/0ypn-NA1UxE">YouTube Video</a></li>
+<li><a class="reference external" href="https://speakerdeck.com/taxpon/pyconjp2015-pythonde3dmoderingu-and-3dpurinto">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885296">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/68/">Python で作って学ぶ形態素解析</a></h2>
+<p><strong>Tomoko Uchida</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/4ACaASe98Ss">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/tomokouchida505/pyconjp2015-python">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885307">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="uwsgi-dockerweb">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/70/">uWSGI/Dockerを利用したWebサービス運用事例</a></h2>
+<p><strong>Yuri Umezaki</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/zsoqAf-c3_s">YouTube Video</a></li>
+<li><a class="reference external" href="https://speakerdeck.com/bungoume/uwsgi-docker-pycon2015">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885320">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="writing-fast-code">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/72/">Writing Fast Code</a></h2>
+<p><strong>Younggun Kim</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/q-nDK8ynC_0">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/scarinet/writing-fast-code-jp-pycon-jp-2015">Slide</a></li>
+<li><a class="reference external" href="http://fibonachicken.herokuapp.com/">FibonaChicken</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885345">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="by">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/59/">セカイノカオ by チーム・カオ</a></h2>
+<p><strong>Hideki Tanaka</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/fqa0qabIGyQ">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/atelierhide/sekainokao-by-teamkao">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885366">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="translation-of-python-programs-into-non-english-languages-for-learners-without-english-proficiency">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/43/">Translation of Python Programs  into non-English Languages for Learners without English Proficiency</a></h2>
+<p><strong>Renyuan Lyu</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/effsaVIfSws">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/tarzanlyu/pyconjp2015talktranslation-of-python-program">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885371">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="hack-python">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/67/">野球Hack!~Pythonを用いたデータ分析と可視化</a></h2>
+<p><strong>Shinichi Nakagawa</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/MBAh5qE57Hs">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/shinyorke/hackpython-pyconjp">Slide</a></li>
+<li><a class="reference external" href="http://shinyorke.hatenablog.com/entry/2015/10/12/161003">Blog</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885357">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="pypi-2015">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/71/">PyPIデビュー 2015</a></h2>
+<p><strong>tell-k</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/ZZ7eRo6C1w8">YouTube Video</a></li>
+<li><a class="reference external" href="http://tell-k.github.io/pyconjp2015/">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885466">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/61/">アドネットワークのデータ解析チームを支える技術</a></h2>
+<p><strong>Takashi Nishibayashi</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/s_3JWZnwvgA">YouTube Video</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/hagino_3000/ss-53786917">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885481">Togetter</a></li>
+</ul>
+</div>
+<div class="section" id="rise-of-the-static-site-generator">
+<h2><a class="reference external" href="https://pycon.jp/2015/en/schedule/presentation/49/">Rise of the Static Site Generator</a></h2>
+<p><strong>Justin Mayer</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/_v-2toU6POA">YouTube Video</a></li>
+<li><a class="reference external" href="http://justinmayer.com/talks/static-site-generators/">Slide</a></li>
+<li><a class="reference external" href="http://togetter.com/li/885496">Togetter</a></li>
+</ul>
+</div>
+</div>
+</div>
+                            </div>
+
+
+    <style>
+    #sns_group {}
+    #sns_group ul{
+        list-style-type: none;
+        display: block;
+        margin: 10px 0;
+        padding-top: 10px;
+        border-top: 1px solid #ccc;
+    }
+    #sns_group li{
+        display: inline-block;
+    }
+    #sns_group li.facebook {
+        vertical-align: top;
+        margin-top: 4px;
+        margin-right: 30px;
+    }
+    #sns_group li.google {
+        margin-top: 3px;
+    }
+    #sns_group li.hatena {
+        vertical-align: top;
+        margin-top: 3px;
+    }
+</style>
+<div id="sns_group">
+    <ul>
+        <li class="twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <script>!function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + '://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'twitter-wjs');</script>
+        </li>
+        <li class="facebook">
+            <script>(function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                // The described facebook appid
+                var appID = null;
+
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "http://connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=" + appID + "&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="/2015/ja/reports/slides/" data-layout="button_count" data-action="like"
+                 data-show-faces="true" data-share="true"></div>
+        </li>
+        <li class="google">
+            <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+            <g:plusone></g:plusone>
+        </li>
+        <li class="hatena">
+            <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button"
+               data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja"
+               title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
+                                                 alt="このエントリーをはてなブックマークに追加" width="20" height="20"
+                                                 style="border: none;"/></a>
+            <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8"
+                    async="async"></script>
+        </li>
+    </ul>
+</div>
+
+
+                        </div>
+                        <aside class="span3">
+                            
+                            
+                                
+                                
+                                <div class="sponsor-list">
+                                    <h2>SPONSORS</h2>
+                                    
+                                    
+                                        
+                                            <h3>Diamond</h3>
+                                            
+                                                <a href="http://www.monotaro.com/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/logo-PyCon.png.100x60_q85.jpg" alt="株式会社MonotaRO" />
+                                                </a>
+                                            
+                                        
+                                    
+                                        
+                                            <h3>Platinum</h3>
+                                            
+                                                <a href="http://curama.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/curama-logo.png.100x60_q85.png" alt="みんなのマーケット株式会社" />
+                                                </a>
+                                            
+                                                <a href="https://www.paypal.com/webapps/mpp/merchant">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/pp_h_rgb.jpg.jpeg.100x60_q85.jpg" alt="PayPal" />
+                                                </a>
+                                            
+                                        
+                                    
+                                        
+                                            <h3>Gold</h3>
+                                            
+                                                <a href="http://www.gandi.net/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/Gandi_logo_black.jpg.100x60_q85.jpg" alt="Gandi" />
+                                                </a>
+                                            
+                                                <a href="http://triax.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/pycon_2014_triax_logo.png.100x60_q85.jpg" alt="トライアックス株式会社" />
+                                                </a>
+                                            
+                                                <a href="https://www.jig-saw.com/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/pyconjp2015_logo.png.100x60_q85.jpg" alt="ジグソー株式会社" />
+                                                </a>
+                                            
+                                                <a href="http://www.bit-isle.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/Bit-isle_4C_logo.jpg.100x60_q85.jpg" alt="Bit-isle" />
+                                                </a>
+                                            
+                                                <a href="http://dena.com/jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/DeNA_logo_RGB.png.100x60_q85.png" alt="株式会社ディー・エヌ・エー" />
+                                                </a>
+                                            
+                                                <a href="http://python.org/psf">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/PSF-Logo.png.100x60_q85.png" alt="Python Software Foundation" />
+                                                </a>
+                                            
+                                                <a href="http://labo.dmm.com/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/1.jpg.100x60_q85.jpg" alt="株式会社DMM.com Labo" />
+                                                </a>
+                                            
+                                        
+                                    
+                                        
+                                            <h3>Silver</h3>
+                                            
+                                                <a href="http://www.goga.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/goga_logo.gif.100x60_q85.jpg" alt="株式会社ゴーガ" />
+                                                </a>
+                                            
+                                                <a href="http://shiroyagi.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/sponsor_shiroyagi.png.100x60_q85.png" alt="白ヤギコーポレーション" />
+                                                </a>
+                                            
+                                                <a href="http://iridge.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/iridgeLogo.png.100x60_q85.jpg" alt="iRidge, Inc. (株式会社アイリッジ)" />
+                                                </a>
+                                            
+                                                <a href="http://www.klab.com/jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/KLab_logo_500500.png.100x60_q85.jpg" alt="KLab株式会社" />
+                                                </a>
+                                            
+                                                <a href="http://www.cb21.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/Catchball21.jpg.100x60_q85.jpg" alt="株式会社キャッチボール・トゥエンティワン" />
+                                                </a>
+                                            
+                                                <a href="http://tracpath.com/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/head_logo.png.100x60_q85.png" alt="tracpath.com" />
+                                                </a>
+                                            
+                                                <a href="http://www.beproud.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/beproud_logo_py.png.100x60_q85.png" alt="株式会社ビープラウド" />
+                                                </a>
+                                            
+                                                <a href="http://zero-start.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/ZEROSTART-B100.png.100x60_q85.jpg" alt="株式会社ゼロスタート" />
+                                                </a>
+                                            
+                                                <a href="http://www.mobilefactory.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/short_logoC.jpg.100x60_q85.jpg" alt="株式会社モバイルファクトリー" />
+                                                </a>
+                                            
+                                                <a href="http://voyagegroup.com/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/VG_logo.png.100x60_q85.jpg" alt="株式会社VOYAGE GROUP" />
+                                                </a>
+                                            
+                                                <a href="http://www.castalia.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/castalia_logo_black.png.100x60_q85.png" alt="キャスタリア" />
+                                                </a>
+                                            
+                                                <a href="http://www.izumobase.com/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/IzumoBASE-Logo-for-Pycon2015.png.100x60_q85.png" alt="IzumoBASE株式会社" />
+                                                </a>
+                                            
+                                                <a href="http://www.silveregg.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/silveregg_logo.gif.100x60_q85.jpg" alt="シルバーエッグ・テクノロジー株式会社" />
+                                                </a>
+                                            
+                                                <a href="http://www.albert2005.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/ALBERT_1.png.100x60_q85.jpg" alt="ALBERT Inc." />
+                                                </a>
+                                            
+                                                <a href="https://pay.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/logo_1.png.100x60_q85.jpg" alt="BASE株式会社" />
+                                                </a>
+                                            
+                                                <a href="http://corp.rakuten.co.jp/careers/engineering/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/WebLOGO_PyCon2015.png.100x60_q85.jpg" alt="楽天株式会社" />
+                                                </a>
+                                            
+                                                <a href="https://www.jetbrains.com/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/JetBrainsFullColor_1.png.100x60_q85.png" alt="JetBrains" />
+                                                </a>
+                                            
+                                                <a href="http://www.nexedi.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/nexedi.png.100x60_q85.png" alt="株式会社Nexedi" />
+                                                </a>
+                                            
+                                                <a href="http://www.serialgames.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/sg_sm_logotype_tate_wa1_0.png.100x60_q85.jpg" alt="株式会社シリアルゲームズ" />
+                                                </a>
+                                            
+                                                <a href="https://gunosy.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/gunosy_icon_3.3.1_512x512.png.100x60_q85.jpg" alt="株式会社Gunosy" />
+                                                </a>
+                                            
+                                                <a href="https://codeiq.jp/jobs">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/PyCon_JP_2015.png.100x60_q85.png" alt="CodeIQ（株式会社リクルートキャリア）" />
+                                                </a>
+                                            
+                                                <a href="http://ustream.siteplus.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/hd_logo.png.100x60_q85.png" alt="STREAMPLUS" />
+                                                </a>
+                                            
+                                                <a href="http://www.leadinge.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/leadingedge.JPG.100x60_q85.jpg" alt="Leading Edge Co., Ltd." />
+                                                </a>
+                                            
+                                                <a href="http://www.nikkei.com/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/nikkei-logop.png.100x60_q85.jpg" alt="日本経済新聞 電子版" />
+                                                </a>
+                                            
+                                                <a href="http://corp.intimatemerger.com/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/im_large_1.png.100x60_q85.png" alt="株式会社インティメート・マージャー" />
+                                                </a>
+                                            
+                                                <a href="http://userdive.com/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/uncovertruth_logo_800x120_1.png.100x60_q85.png" alt="UNCOVER TRUTH" />
+                                                </a>
+                                            
+                                                <a href="http://type.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/attype_y.png.100x60_q85.jpg" alt="＠type" />
+                                                </a>
+                                            
+                                                <a href="http://www.recruitjobs.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/RECRUIT_jobs_2L_JP.jpg.100x60_q85.jpg" alt="株式会社リクルートジョブズ" />
+                                                </a>
+                                            
+                                                <a href="http://corp.gree.net/jp/ja/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/logo_rgb_v1.1.jpg.100x60_q85.jpg" alt="グリー株式会社" />
+                                                </a>
+                                            
+                                                <a href="https://eurie.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/eurie_logo_horizontal.png.100x60_q85.jpg" alt="株式会社ユーリエ" />
+                                                </a>
+                                            
+                                                <a href="http://levtech.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/levtechweb.png.100x60_q85.jpg" alt="レバテック" />
+                                                </a>
+                                            
+                                                <a href="http://jp.yamaha.com/products/network/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/ylm_st_violet_image_1024.jpg.100x60_q85.jpg" alt="Yamaha Corporation" />
+                                                </a>
+                                            
+                                                <a href="http://begi.net/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/beginet_logo.png.100x60_q85.png" alt="株式会社びぎねっと" />
+                                                </a>
+                                            
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                        
+                                            <h3>Media</h3>
+                                            
+                                                <a href="http://codezine.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/codezine_logo.gif.100x60_q85.png" alt="CodeZine" />
+                                                </a>
+                                            
+                                                <a href="http://www.oreilly.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/orj-logo-2014-bk.png.100x60_q85.jpg" alt="株式会社オライリー・ジャパン" />
+                                                </a>
+                                            
+                                                <a href="http://thinkit.co.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/thinkittm.png.100x60_q85.png" alt="Think IT" />
+                                                </a>
+                                            
+                                                <a href="http://gihyo.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/gihyojp-logo.jpg.100x60_q85.jpg" alt="gihyo.jp" />
+                                                </a>
+                                            
+                                                <a href="http://engineer.typemag.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/etype_t.png.100x60_q85.png" alt="エンジニアtype" />
+                                                </a>
+                                            
+                                                <a href="http://eventdots.jp/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/dots_logo_black_1.png.100x60_q85.png" alt="dots." />
+                                                </a>
+                                            
+                                                <a href="http://togetter.com/">
+                                                    <img src="https://pycon.jp/2015/site_media/media/sponsor_files/web-togetter.png.100x60_q85.png" alt="Togetter" />
+                                                </a>
+                                            
+                                        
+                                    
+                                </div>
+                                
+                            
+                            
+                        </aside>
+                    </div>
+
+                </div>
+                
+            </div>
+        
+    </div>
+
+    <footer>
+
+
+        <div class="container">
+        
+            <div class="footer-content">
+                <p class="sns">
+                    <a href="https://www.facebook.com/PyConJP"><img src="https://pycon.jp/2015/site_media/static/img/icon-facebook.png"></a>
+                    <a href="https://twitter.com/pyconj"><img src="https://pycon.jp/2015/site_media/static/img/icon-twitter.png"></a>
+                </p>
+                <p>
+                  PyCon JP 2015 in Tokyo is a production of the <a href="http://www.pycon.jp/">PyCon JP Committee</a>.Contact <a href="mailto:2015@pycon.jp">2015@pycon.jp</a>
+                </p>
+            </div>
+        
+        </div>
+    </footer>
+
+        </div>
+
+        
+    <script src="https://pycon.jp/2015/site_media/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://pycon.jp/2015/site_media/static/pinax/js/theme.js"></script>
+    
+      <script type="text/javascript" src="https://pyconjp.atlassian.net/s/4c678ddcf30ce958715c72ddb2ee1b23-T/ja_JPrwncre/65000/26/1.4.25/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=ja-JP&amp;collectorId=705f31e0"></script>
+    
+    
+
+
+        
+  
+  
+
+    </body>
+
+<!-- Mirrored from pycon.jp/2015/ja/reports/slides/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 06 Sep 2020 01:34:39 GMT -->
+</html>
